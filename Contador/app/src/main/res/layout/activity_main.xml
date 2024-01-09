@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5F5"
+    android:backgroundTint="#F6F1F1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F0F0"
+        android:backgroundTint="#CDCBCB"
+        android:backgroundTintMode="src_atop"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:gravity="center"
+            android:text="CONTADOR"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Button
+                android:id="@+id/buttonMas"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0880D1"
+                android:gravity="center|center_vertical"
+                android:includeFontPadding="true"
+                android:text="+"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/buttonMenos"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0880D1"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/atras"
+            android:backgroundTint="#0880D1"
+            android:backgroundTintMode="src_atop"
+            android:gravity="top"
+            android:shadowRadius="0"
+            android:text="← "
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            tools:text="RESET" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
