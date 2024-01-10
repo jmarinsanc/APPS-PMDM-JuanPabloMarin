@@ -75,14 +75,11 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:background="@drawable/atras"
-            android:backgroundTint="#0880D1"
             android:backgroundTintMode="src_atop"
             android:gravity="top"
             android:shadowRadius="0"
-            android:text="← "
             android:textAlignment="textEnd"
-            android:textSize="24sp"
-            tools:text="RESET" />
+            android:textSize="24sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
